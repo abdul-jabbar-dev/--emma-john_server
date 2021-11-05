@@ -70,9 +70,6 @@ async function run() {
                 res.status(401).json({ message: 'user not authorize' })
             }
 
-
-
-
             // res.json(result)
         })
         app.post('/orders', async (req, res) => {
@@ -97,4 +94,4 @@ app.get('/', (rq, res) => {
 
 
 
-app.listen(port, () => console.log('server is running', port))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
