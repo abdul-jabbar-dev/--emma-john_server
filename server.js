@@ -29,7 +29,7 @@ async function varify(req, res, next) {
             req.decodedUserEmail = valid.email
         }
         catch {
-
+            console.dir(Error)
         }
     } next()
 }
